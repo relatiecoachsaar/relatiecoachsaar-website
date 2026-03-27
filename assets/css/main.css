@@ -102,12 +102,16 @@ body {
 
 .header-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 12px;
   margin: 2rem 0;
 }
 
 .header-icons a { text-decoration: none; }
+
+@media (max-width: 768px) {
+  .header-icons { justify-content: center; }
+}
 
 .header-icons .icon {
   color: var(--bg-dark);
