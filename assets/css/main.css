@@ -266,18 +266,7 @@ section h2 {
 }
 
 .service-card i {
-  font-size: 2.2rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-light));
-  color: var(--white);
-  box-shadow: 0 4px 16px rgba(155,123,184,0.3);
+  display: none;
 }
 
 .service-card h3 {
