@@ -1,0 +1,18 @@
+# Site settings
+title: Relatiecoach Saar
+description: Relatiecoach en verbindingscoach Sarah Bracke in Eeklo. Hulp bij relatieproblemen, koppelcoaching, zelfverbinding en relatietherapie. Zacht waar het kan, eerlijk waar het moet.
+url: "https://relatiecoachsaar.be"
+
+# User settings
+username: Sarah Bracke
+display_name: Relatiecoach Saar
+user_title: Relatie- en Verbindingscoach
+email: praktijk@relatiecoachsaar.be
+phone: "+32 493 66 24 03"
+instagram_username: relatiecoach_saar
+
+# Images
+profile_image: /assets/images/profile.jpg
+about_image: /assets/images/about.jpg
+
+exclude: ['source', 'docker-compose.yml', 'README.md', 'Gemfile', 'Gemfile.lock']

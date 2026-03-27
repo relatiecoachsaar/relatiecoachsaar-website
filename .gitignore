@@ -1,0 +1,6 @@
+.idea/
+_site/
+
+Gemfile.lock
+source/
+.DS_Store

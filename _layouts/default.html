@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.title }} | {{ site.user_title }}</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#9b7bb8">
+  <meta name="geo.region" content="BE-VOV">
+  <meta name="geo.placename" content="Eeklo">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="alternate" hreflang="nl-BE" href="{{ site.url }}/">
+  <link rel="alternate" hreflang="nl" href="{{ site.url }}/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ site.title }} | {{ site.user_title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/social-profile.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }} | {{ site.user_title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/social-profile.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.profile_image }}",
+    "email": "{{ site.email }}",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.1872,
+        "longitude": 3.5567
+      },
+      "geoRadius": "40000"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Eeklo",
+      "addressCountry": "BE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/{{ site.instagram_username }}/"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "{{ site.username }}",
+      "jobTitle": "{{ site.user_title }}"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  {% include about.html %}
+  {% include services.html %}
+  {% include contact.html %}
+  {% include footer.html %}
+</body>
+</html>
