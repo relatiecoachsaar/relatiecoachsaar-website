@@ -222,20 +222,7 @@ section h2 {
   margin-right: auto;
 }
 
-.about-extra h2 { margin-bottom: 1.5rem; }
 .about-extra p { margin-bottom: 1.5rem; }
-
-blockquote {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--accent);
-  border-left: 3px solid var(--accent);
-  padding-left: 1.5rem;
-  margin: 2.5rem auto;
-  max-width: 600px;
-  text-align: left;
-}
 
 /* === Services === */
 #services {
