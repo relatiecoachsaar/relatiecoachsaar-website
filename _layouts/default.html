@@ -79,8 +79,6 @@
   {% include services.html %}
   {% include contact.html %}
   {% include footer.html %}
-  {% if jekyll.environment == "production" %}
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "223df483f7ae4b4db5d31aa7e860d99e"}'></script><!-- End Cloudflare Web Analytics -->
-  {% endif %}
+  {% include analytics.html %}
 </body>
 </html>
