@@ -10,13 +10,13 @@
       <p class="site-author">{{ site.username }}</p>
       <div class="header-icons">
         {% if site.email %}
-        <a aria-label="E-mail" href="mailto:{{ site.email }}"><i class="icon fa-solid fa-envelope"></i></a>
-        {% endif %}
-        {% if site.instagram_username %}
-        <a aria-label="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/{{ site.instagram_username }}/"><i class="icon fa-brands fa-instagram"></i></a>
+        <a aria-label="E-mail" href="#contact"><i class="icon fa-solid fa-envelope"></i></a>
         {% endif %}
         {% if site.phone %}
-        <a aria-label="Telefoon" href="tel:{{ site.phone }}"><i class="icon fa-solid fa-phone"></i></a>
+        <a aria-label="Telefoon" href="#contact"><i class="icon fa-solid fa-phone"></i></a>
+        {% endif %}
+        {% if site.instagram_username %}
+        <a aria-label="Instagram" href="#contact"><i class="icon fa-brands fa-instagram"></i></a>
         {% endif %}
       </div>
       <a href="#about" class="cta-button">Ontdek meer</a>
