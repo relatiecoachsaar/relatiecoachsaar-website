@@ -213,7 +213,10 @@ section h2 {
 
 .about-image img {
   width: 100%;
-  max-width: 380px;
+  max-width: 340px;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: top;
   border-radius: 12px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.1);
   display: block;
@@ -221,7 +224,7 @@ section h2 {
 }
 
 .about-extra {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
   max-width: 960px;
   margin-left: auto;
@@ -232,7 +235,7 @@ section h2 {
 
 /* === Services === */
 #services {
-  background: var(--white);
+  background: var(--bg);
   max-width: 100%;
   padding: 5rem 2rem;
 }
@@ -270,7 +273,7 @@ section h2 {
   text-align: center;
   padding: 1.5rem 2rem;
   border-radius: 12px;
-  background: var(--bg);
+  background: var(--white);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
@@ -319,7 +322,16 @@ section h2 {
 /* === Contact === */
 #contact {
   text-align: center;
+  max-width: 100%;
+  padding: 5rem 2rem;
+  background: var(--white);
+}
+
+#contact .contact-grid,
+#contact .contact-layout {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contact p { margin-bottom: 2rem; color: var(--text-light); }
@@ -494,3 +506,79 @@ section h2 {
 .page-content li { margin-bottom: 0.4rem; }
 .page-content a { color: var(--accent); }
 .page-content a:hover { text-decoration: underline; }
+
+/* === Over Saar === */
+#over-saar { background: var(--white); max-width: 100%; padding: 5rem 2rem; }
+
+.over-saar-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.over-saar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.over-saar-text .intro {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.over-saar-text h3 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--bg-dark);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.over-saar-text p { margin-bottom: 1rem; }
+
+.over-saar-extra {
+  max-width: 960px;
+  margin: 1rem auto 0;
+}
+
+.over-saar-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.over-saar-text ul li {
+  padding: 0.3rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.over-saar-text ul li::before {
+  content: '♡';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.over-saar-text .specialisaties {
+  background: var(--bg);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  .over-saar-container { grid-template-columns: 1fr; }
+  .over-saar-image { max-width: 250px; margin: 0 auto; }
+}
