@@ -2,7 +2,10 @@
   <div class="hero-bg"></div>
   <div class="hero-layout">
     <div class="hero-photo-area">
-      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Relatiecoach Sarah Bracke in Eeklo" class="profile-photo" fetchpriority="high">
+      <picture>
+        <source srcset="{{ '/assets/images/profile.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Relatiecoach Sarah Bracke in Eeklo" class="profile-photo" fetchpriority="high">
+      </picture>
     </div>
     <div class="hero-text-area">
       <h1 class="site-title">{{ site.display_name }}</h1>
