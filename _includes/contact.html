@@ -17,7 +17,10 @@
     </div>
   </div>
   <div class="contact-layout">
-    <img src="{{ '/assets/images/contact.jpg' | relative_url }}" alt="Neem contact op met relatiecoach Sarah Bracke" class="contact-photo" loading="lazy" width="243" height="406">
+    <picture>
+      <source srcset="{{ '/assets/images/contact.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/assets/images/contact.jpg' | relative_url }}" alt="Neem contact op met relatiecoach Sarah Bracke" class="contact-photo" loading="lazy" width="243" height="406">
+    </picture>
     <div class="booking-cards">
       <div class="booking-card">
         <h3>Intake individueel</h3>
