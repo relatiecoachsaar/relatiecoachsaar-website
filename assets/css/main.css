@@ -453,7 +453,11 @@ section h2 {
 }
 
 .footer p { margin: 0; }
-.footer .footer-address { margin-bottom: 1.5rem; }
+.footer .footer-address { margin-bottom: 0; }
+.footer-bbtc { margin-top: 0.2rem; }
+.footer-bbtc a { color: rgba(255,255,255,0.5); text-decoration: none; }
+.footer-bbtc img { vertical-align: middle; margin-left: 0.4rem; }
+.footer-bbtc a:hover { color: var(--accent-light); }
 
 /* === Footer Links === */
 .footer-links { margin-top: 0.2rem; }
